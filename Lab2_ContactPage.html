@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>INST377 - Lab 2 - Contact Form</title>
+        <style>
+            body {
+                background-color: blanchedalmond;
+            }
+            .contactName, .contactEmail {
+                margin-top: 10px;
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+            input[type="text"], input[type="email"] {
+                width: 175px; 
+                padding: 5px; 
+                border: 2px solid #000000; 
+            }
+            .contactSubmit input[type=submit] {
+                background-color: black;
+                color: white;
+                padding: 10px 20px;
+                font-size: 15px;
+                margin-top: 10px;
+                margin-right: 20px;
+                margin-left: 5px;
+            }
+            .contactSubmit input[type="submit"]:hover {
+                background-color: cadetblue;
+            }
+
+            
+        </style>
+    </head>
+
+<body>
+    <h1>INST377 - Lab 2 - Contact Me</h1>
+    <form action="Lab2_Thankyou_Page.html">
+        <div class="contactName">
+    <!-- Name Input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Jane Doe" required>
+        </div>
+    <br>
+
+    <!-- Email Input-->
+    <div class="contactEmail">
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="myemail123@gmail.com" required>
+    </div>
+    <br>
+
+    <!-- Submit -->
+    <div class="contactSubmit">
+    <input type="submit" value="Submit">
+    </div>
+
+</form>
+</body>
+</html>
